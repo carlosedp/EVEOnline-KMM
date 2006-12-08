@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icons" >
+        <file>UI/img/Assets.png</file>
+        <file>UI/img/CapitalShip.png</file>
+        <file>UI/img/Costs.png</file>
+        <file>UI/img/Hist.PNG</file>
+        <file>UI/img/MineralStock.png</file>
+        <file>UI/img/Production.png</file>
+        <file>UI/img/Sales.png</file>
+        <file>UI/img/Skills.png</file>
+        <file>UI/img/qt.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,23 @@
+Changelog for KMM - Kavanagh Manufacture Manager
+
+
+Changes in 0.1 Build () - Beta 1
+    - Users can add notes for all production types to track the process
+    - Users can have multiple characters and view the active one in statusbar
+    - Production and Prod. history windows now uses the active character skills
+    - Sales tracking window added
+    - Misc bugs corrected
+
+Changes in 0.0.3 Build 79 (08-08-2006) - Alpha 3
+    - Capital ships blueprints loaded from assets
+    - Fixed component cost calculation [Prodgen]
+    - Application saves values entered in Capital ships contruction fields
+
+Changes in 0.0.2 Build 68 (01-08-2006) - Alpha 2
+    - Capital ships production support
+    - Character XML imports
+    - Bugs fixed
+
+Changes in 0.0.1 Build 62 (26-07-2006) - Alpha 1
+    - Initial release
+    - Internal tests
