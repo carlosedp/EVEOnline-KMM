@@ -1,0 +1,65 @@
+Changelog for KMM - Kavanagh Manufacture Manager
+
+
+Changes in 1.0 Build 134 (07-12-2006) - Final 1.0
+      Features:
+        - Now you can use the fields in mineral window as a calculator. In the quantity field, you can use +500 to add 
+          500 to you Tritanium for example.
+          the "-" works too, to substract the amount from database -150 for example.
+        - EVE Database updated with latest ships and modules from Revelations(Kali).
+        - Issue #9 - Mineral price indexes from internet added to the mineral window.
+        - Issue #17 - Added a button to production window, production history and sales tracking permitting the export to a CSV file.
+
+      Bugs
+        - Issue #22 - Application displays a message if you are deleting the last location. You need at least one location in database.
+        - Added bug when there are no active characters selected the application emits an error when user opens a production window.
+        
+
+Changes in 0.2 Build 113 (02-10-2006) - Beta 2
+      Features:
+        - No need to doubleclick a table item to edit it, just click the line to load the values.
+        - Changed text to right alignment in forms.
+        - Issue #1 - User can restrict item listing by the blueprints in assets via a checkbox.
+        - Issue #3 - Now user can delete more than 1 blueprint at the same time, just selecting using Ctrl or Shift.
+        - Issue #6 - Now the user has the option to allow the application substract the mineral needs and BP runs from 
+          the Stock and assets when the item is put in "Build" status.
+        - Issue #8 - Clicking the window toolbar button for an already open windows brings it to the front instead of 
+          displaying a message.
+        - Issue #10 - Now all components stretch and resizes when the user maximizes or resizes the internal windows.
+        - Issue #18 - Confirmation dialog on character deletion
+        - User can delete more then 1 item at the same time using Ctrl or Shift in any table (production, prod. history, 
+          capital ships, blueprints).
+        - Changed the BP method selection for the substraction of runs for items entering build stage. The app first uses a 
+          BPO, then uses the BPC with higher run count.
+
+      Bugs:
+        - Fixes Issue #2 - Doubleclicking a table leads to an incorrect editable field.
+        - Fixes Issue #12 - Users now can delete a location from the database using a button in Production window. If an item 
+          uses the location for build or for sale the location will be not deleted and a message shown to the user.
+        - Fixes Issue #13 - The filter will only show the BPOs or BPCs with runs > 0.
+        - Fixes Issue #14 - The capital ships on-sale or sold crashes the Sales window.
+        - Fixed the Capital ships status update in history tab.
+        - Fixed a problem when adding and deleting characters, the skills stay blank and the application crashes when loads.
+        - Now production window loads BPme and BPpe = 0 when you dont have a BP in assets.
+        - Fixed an error message when user has no BPs and clicks the "User BPs" checkbox.
+
+Changes in 0.1 Build 91 (13-09-2006) - Beta 1
+        - Users can add notes for all production types to track the process
+        - Users can have multiple characters and view the active one in statusbar
+        - Production and Prod. history windows now uses the active character skills
+        - Sales tracking window added
+        - Misc bugs corrected
+
+Changes in 0.0.3 Build 79 (08-08-2006) - Alpha 3
+        - Capital ships blueprints loaded from assets
+        - Fixed component cost calculation [Prodgen]
+        - Application saves values entered in Capital ships contruction fields
+
+Changes in 0.0.2 Build 68 (01-08-2006) - Alpha 2
+        - Capital ships production support
+        - Character XML imports
+        - Bugs fixed
+
+Changes in 0.0.1 Build 62 (26-07-2006) - Alpha 1
+        - Initial release
+        - Internal tests
