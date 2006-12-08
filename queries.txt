@@ -1,0 +1,55 @@
+------- Selects the buildable modules -----------------
+
+SELECT module.typename "Module", module.typeID "typeID"
+    FROM invTypes module, invBlueprintTypes bp, invTypes bpitem
+    where bp.productTypeID = module.typeID
+    AND ((module.typeid NOT IN (select typeid from invmetatypes)) OR
+    module.typeid IN (select typeID from invmetatypes where
+    (metaGroupID = 1 OR metaGroupID = 2)))
+    AND bp.blueprinttypeID = bpitem.typeID
+    AND NOT (
+            module.typename LIKE '% test %'
+         OR module.typename LIKE 'test%'
+         OR module.typename LIKE '%test'
+         OR module.typename LIKE '%meta%'
+         OR module.typename LIKE '%test'
+         OR module.typename LIKE '% old'
+         OR module.typename LIKE '%unused'
+         OR module.typename LIKE '%tier%'
+         OR module.typename LIKE '"%'
+         OR module.typename LIKE "'%"
+         )
+    order by module.typename
+
+------------------------------------------------------
+
+---- Selects capital Ships ------
+
+SELECT module.typename "Ship", module.typeID "typeID"
+FROM invTypes module
+WHERE module.groupID IN (485,513,547,659,30)
+AND module.typeName NOT LIKE ('%test%')
+ORDER BY module.typeName
+
+---------------------------------------------------
+Lets also have the Sales Tab pull information for any records "On Sale" so we can put a sale price and Blueprint Cost and have it show margins.
+
+Also, we should have the Sales Tab automatically calculate taxes if we tell it to. Maybe only if we set a certain cell to True or a value, it will add taxes in on the specific Sale Record. I know I would not sell a Revelation on market =)
+
+ 
+
+Here are the skill descriptions:
+
+Accounting:
+
+Proficiency at squaring away the odds and ends of business transactions, keeping the check books tight. Each level of skill reduces transaction tax by 10%.
+
+ 
+
+Broker Relations:
+
+Proficiency at driving down market-related costs. Each level of skill grants a 5% reduction in the costs associated with setting up a market order, which usually come to 1% of the order's total value. This can be further influenced by the player's standing towards the owner of the station where the order is entered.
+
+ 
+
+Broker Relations deducts 1% when a order is placed. Transaction Tax deducts 1% when the item is actually bought or sold.

@@ -1,0 +1,2622 @@
+<ui version="4.0" >
+ <author></author>
+ <comment></comment>
+ <exportmacro></exportmacro>
+ <class>CapitalShips</class>
+ <widget class="QMainWindow" name="CapitalShips" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>538</height>
+   </rect>
+  </property>
+  <property name="font" >
+   <font>
+    <family>MS Shell Dlg 2</family>
+    <pointsize>7</pointsize>
+    <weight>50</weight>
+    <italic>false</italic>
+    <bold>false</bold>
+    <underline>false</underline>
+    <strikeout>false</strikeout>
+   </font>
+  </property>
+  <property name="windowTitle" >
+   <string>Capital Ships Construction</string>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <widget class="QGroupBox" name="groupBox" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>481</width>
+      <height>76</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Capital Ship Information</string>
+    </property>
+    <widget class="QWidget" name="widget" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>121</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_2" >
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="text" >
+         <string>Ship</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="itemCombo" >
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="widget" >
+     <property name="geometry" >
+      <rect>
+       <x>340</x>
+       <y>20</y>
+       <width>131</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_6" >
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="text" >
+         <string>Location</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="locationCombo" >
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="statusTip" >
+         <string>Select the build location or type a new one.</string>
+        </property>
+        <property name="editable" >
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="widget" >
+     <property name="geometry" >
+      <rect>
+       <x>220</x>
+       <y>20</y>
+       <width>34</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_4" >
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="text" >
+         <string>PE Skill</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="PeSkill" >
+        <property name="maximumSize" >
+         <size>
+          <width>30</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="inputMask" >
+         <string>900; </string>
+        </property>
+        <property name="text" >
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="widget" >
+     <property name="geometry" >
+      <rect>
+       <x>260</x>
+       <y>20</y>
+       <width>35</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_5" >
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="text" >
+         <string>BP. ME</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="BpMe" >
+        <property name="maximumSize" >
+         <size>
+          <width>30</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="inputMask" >
+         <string>900; </string>
+        </property>
+        <property name="text" >
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="widget" >
+     <property name="geometry" >
+      <rect>
+       <x>140</x>
+       <y>20</y>
+       <width>72</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label" >
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="text" >
+         <string>Date</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="date" >
+        <property name="maximumSize" >
+         <size>
+          <width>70</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="inputMask" >
+         <string>99/99/9999;_</string>
+        </property>
+        <property name="text" >
+         <string>//</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="widget" >
+     <property name="geometry" >
+      <rect>
+       <x>300</x>
+       <y>20</y>
+       <width>33</width>
+       <height>42</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>0</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="label_10" >
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="text" >
+         <string>BP. PE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="BpPe" >
+        <property name="maximumSize" >
+         <size>
+          <width>30</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="font" >
+         <font>
+          <family>MS Shell Dlg 2</family>
+          <pointsize>8</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+          <underline>false</underline>
+          <strikeout>false</strikeout>
+         </font>
+        </property>
+        <property name="inputMask" >
+         <string>9; </string>
+        </property>
+        <property name="text" >
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="insertButton" >
+    <property name="geometry" >
+     <rect>
+      <x>700</x>
+      <y>20</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip" >
+     <string>Insert Construction</string>
+    </property>
+    <property name="statusTip" >
+     <string>Insert Construction</string>
+    </property>
+    <property name="text" >
+     <string>Insert Job</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reloadButton" >
+    <property name="geometry" >
+     <rect>
+      <x>700</x>
+      <y>50</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip" >
+     <string>Reload and calculate fields</string>
+    </property>
+    <property name="statusTip" >
+     <string>Reload and calculate fields</string>
+    </property>
+    <property name="text" >
+     <string>Reload Data</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3" >
+    <property name="geometry" >
+     <rect>
+      <x>500</x>
+      <y>10</y>
+      <width>181</width>
+      <height>76</height>
+     </rect>
+    </property>
+    <property name="title" >
+     <string>Capital Ship Cost</string>
+    </property>
+    <widget class="QLabel" name="label_33" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>22</y>
+       <width>116</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>9</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="text" >
+      <string>Construction Cost:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="constructionTotal" >
+     <property name="geometry" >
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>161</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font" >
+      <font>
+       <family>MS Shell Dlg 2</family>
+       <pointsize>11</pointsize>
+       <weight>75</weight>
+       <italic>false</italic>
+       <bold>true</bold>
+       <underline>false</underline>
+       <strikeout>false</strikeout>
+      </font>
+     </property>
+     <property name="frameShape" >
+      <enum>QFrame::Box</enum>
+     </property>
+     <property name="frameShadow" >
+      <enum>QFrame::Raised</enum>
+     </property>
+     <property name="text" >
+      <string>_____________</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>100</y>
+      <width>761</width>
+      <height>421</height>
+     </rect>
+    </property>
+    <property name="currentIndex" >
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab" >
+     <attribute name="title" >
+      <string>Capital Ship Construction</string>
+     </attribute>
+     <layout class="QHBoxLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_26" >
+            <property name="font" >
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>7</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="text" >
+             <string>Component</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer>
+            <property name="orientation" >
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeHint" >
+             <size>
+              <width>20</width>
+              <height>40</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_3" >
+            <property name="text" >
+             <string>Capital Armor Plates</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_7" >
+            <property name="text" >
+             <string>Capital Capacitor Battery</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_8" >
+            <property name="text" >
+             <string>Capital Cargo Bay</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_11" >
+            <property name="text" >
+             <string>Capital Clone Vat Bay</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_14" >
+            <property name="text" >
+             <string>Capital Computer System</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_13" >
+            <property name="text" >
+             <string>Capital Construction Parts</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_15" >
+            <property name="font" >
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>7</pointsize>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="text" >
+             <string>Capital Corporate Hangar Bay</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_17" >
+            <property name="text" >
+             <string>Capital Doomsday Weapon Mount</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_16" >
+            <property name="text" >
+             <string>Capital Drone Bay</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_19" >
+            <property name="text" >
+             <string>Capital Jump Bridge Array</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_21" >
+            <property name="text" >
+             <string>Capital Jump Drive</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_22" >
+            <property name="text" >
+             <string>Capital Launcher Hardpoint</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_23" >
+            <property name="text" >
+             <string>Capital Power Generator</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_20" >
+            <property name="text" >
+             <string>Capital Propulsion Engine</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_18" >
+            <property name="text" >
+             <string>Capital Sensor Cluster</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_24" >
+            <property name="text" >
+             <string>Capital Shield Emitter</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_25" >
+            <property name="text" >
+             <string>Capital Ship Maintenance Bay</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_12" >
+            <property name="text" >
+             <string>Capital Siege Array</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_9" >
+            <property name="text" >
+             <string>Capital Turret Hardpoint</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_8" >
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_27" >
+            <property name="font" >
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>7</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="toolTip" >
+             <string>This information is taken from assets</string>
+            </property>
+            <property name="text" >
+             <string>BP. ME</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="armor_plates_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="cap_batt_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="cargo_bay_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="clone_vat_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="comp_sys_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="const_parts_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="corp_hangar_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="dooms_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="drone_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="jump_brid_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="jump_drive_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="launcher_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="power_gen_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="prop_eng_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="sensor_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="shield_emit_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="ship_maint_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="siege_array_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="turret_BPME" >
+            <property name="maximumSize" >
+             <size>
+              <width>30</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text" >
+             <string>0</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_7" >
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_29" >
+            <property name="font" >
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>7</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="toolTip" >
+             <string>This information is taken from assets</string>
+            </property>
+            <property name="text" >
+             <string>Blueprint Cost / Run</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" >
+            <property name="margin" >
+             <number>0</number>
+            </property>
+            <property name="spacing" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="armor_plates_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cap_batt_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cargo_bay_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="clone_vat_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="comp_sys_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="const_parts_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="corp_hangar_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="dooms_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="drone_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_brid_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_drive_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="launcher_BPCOST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power_gen_BPCOST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="prop_eng_BPCOST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sensor_BPCOST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="shield_emit_BPCOST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ship_maint_BPCOST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="siege_array_BPCOST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="turret_BPCOST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_11" >
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_28" >
+            <property name="font" >
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>7</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="toolTip" >
+             <string>Enter the market cost for this component</string>
+            </property>
+            <property name="text" >
+             <string>Market Cost</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" >
+            <property name="margin" >
+             <number>0</number>
+            </property>
+            <property name="spacing" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="armor_plates_MARKET" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cap_batt_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cargo_bay_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="clone_vat_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="comp_sys_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="const_parts_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="corp_hangar_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="dooms_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="drone_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_brid_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_drive_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="launcher_MARKET" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power_gen_MARKET" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="prop_eng_MARKET" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sensor_MARKET" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="shield_emit_MARKET" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ship_maint_MARKET" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="siege_array_MARKET" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="turret_MARKET" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_4" >
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_30" >
+            <property name="font" >
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>7</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="text" >
+             <string>Build Cost</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" >
+            <property name="margin" >
+             <number>0</number>
+            </property>
+            <property name="spacing" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="armor_plates_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cap_batt_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cargo_bay_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="clone_vat_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="comp_sys_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="const_parts_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="corp_hangar_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="dooms_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="drone_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_brid_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_drive_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="launcher_BUILD" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power_gen_BUILD" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="prop_eng_BUILD" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sensor_BUILD" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="shield_emit_BUILD" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ship_maint_BUILD" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="siege_array_BUILD" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="turret_BUILD" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_3" >
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_60" >
+            <property name="font" >
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>7</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="text" >
+             <string>Qty</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" >
+            <property name="margin" >
+             <number>0</number>
+            </property>
+            <property name="spacing" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="armor_plates_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cap_batt_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cargo_bay_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="clone_vat_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="comp_sys_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="const_parts_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="corp_hangar_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="dooms_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="drone_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_brid_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_drive_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="launcher_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power_gen_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="prop_eng_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sensor_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="shield_emit_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ship_maint_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="siege_array_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="turret_QT" >
+              <property name="maximumSize" >
+               <size>
+                <width>30</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+              <property name="readOnly" >
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line_6" >
+          <property name="orientation" >
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" >
+          <property name="margin" >
+           <number>0</number>
+          </property>
+          <property name="spacing" >
+           <number>6</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_32" >
+            <property name="font" >
+             <font>
+              <family>MS Shell Dlg 2</family>
+              <pointsize>7</pointsize>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <underline>false</underline>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="toolTip" >
+             <string>Total cost based on the best price</string>
+            </property>
+            <property name="text" >
+             <string>Cost</string>
+            </property>
+            <property name="alignment" >
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" >
+            <property name="margin" >
+             <number>0</number>
+            </property>
+            <property name="spacing" >
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLineEdit" name="armor_plates_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cap_batt_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="cargo_bay_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="clone_vat_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="comp_sys_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="const_parts_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="corp_hangar_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="dooms_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="drone_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_brid_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="jump_drive_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="launcher_COST" >
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="power_gen_COST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="prop_eng_COST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="sensor_COST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="shield_emit_COST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ship_maint_COST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="siege_array_COST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="turret_COST" >
+              <property name="inputMask" >
+               <string/>
+              </property>
+              <property name="text" >
+               <string>0</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="tab_2" >
+     <attribute name="title" >
+      <string>Capital Ship Build History</string>
+     </attribute>
+     <layout class="QVBoxLayout" >
+      <property name="margin" >
+       <number>9</number>
+      </property>
+      <property name="spacing" >
+       <number>6</number>
+      </property>
+      <item>
+       <widget class="QTableWidget" name="prodTable" />
+      </item>
+      <item>
+       <layout class="QHBoxLayout" >
+        <property name="margin" >
+         <number>0</number>
+        </property>
+        <property name="spacing" >
+         <number>6</number>
+        </property>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="deleteButton" >
+          <property name="statusTip" >
+           <string>Delete selected job</string>
+          </property>
+          <property name="text" >
+           <string>Delete Job</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="viewFilteredButton" >
+          <property name="statusTip" >
+           <string>Filter view using selected status</string>
+          </property>
+          <property name="text" >
+           <string>View all filtered by:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="filterCombo" />
+        </item>
+        <item>
+         <spacer>
+          <property name="orientation" >
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" >
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>780</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar" />
+ </widget>
+ <pixmapfunction></pixmapfunction>
+ <tabstops>
+  <tabstop>itemCombo</tabstop>
+  <tabstop>date</tabstop>
+  <tabstop>PeSkill</tabstop>
+  <tabstop>BpMe</tabstop>
+  <tabstop>BpPe</tabstop>
+  <tabstop>locationCombo</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>turret_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>460</x>
+     <y>525</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>326</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>siege_array_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>460</x>
+     <y>507</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>316</x>
+     <y>82</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>ship_maint_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>443</x>
+     <y>483</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>307</x>
+     <y>89</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>shield_emit_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>386</x>
+     <y>460</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>297</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>sensor_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>424</x>
+     <y>442</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>480</x>
+     <y>79</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>prop_eng_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>418</x>
+     <y>423</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>586</x>
+     <y>91</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>power_gen_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>418</x>
+     <y>410</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>458</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>launcher_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>411</x>
+     <y>393</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>409</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>jump_drive_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>381</x>
+     <y>370</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>626</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>jump_brid_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>379</x>
+     <y>350</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>545</x>
+     <y>86</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>drone_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>385</x>
+     <y>337</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>510</x>
+     <y>88</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>dooms_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>371</x>
+     <y>315</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>650</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>corp_hangar_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>380</x>
+     <y>304</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>695</x>
+     <y>74</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>const_parts_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>397</x>
+     <y>278</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>729</x>
+     <y>84</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comp_sys_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>389</x>
+     <y>263</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>669</x>
+     <y>90</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>clone_vat_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>382</x>
+     <y>242</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>607</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cargo_bay_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>379</x>
+     <y>229</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>562</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>cap_batt_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>376</x>
+     <y>210</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>399</x>
+     <y>87</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>armor_plates_MARKET</sender>
+   <signal>returnPressed()</signal>
+   <receiver>reloadButton</receiver>
+   <slot>animateClick()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>377</x>
+     <y>196</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>366</x>
+     <y>85</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
