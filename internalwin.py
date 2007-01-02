@@ -22,7 +22,7 @@
 #############################################################################
 
 from utilities import *
-from dbUtils import KMMdatabase
+from dbUtils import KMMdatabase, DatabaseException
 from itemObjects import *
 from xmlparse2 import *
 
@@ -830,6 +830,11 @@ class skillsWindow(internalWindows,Ui_CharacterSkills):
             return
         
         for line in parseXMLSkills(str(filePath)):
+            if line == 1:
+                QtGui.QMessageBox.critical( self, self.tr('Import Error'), 
+                    self.tr('Your XML file is invalid. Try downloading it again from EVE-Online website.'),
+                    QtGui.QMessageBox.Ok,QtGui.QMessageBox.NoButton,QtGui.QMessageBox.NoButton)
+                return 0
             data = line.split("|")
             ID = int(data[1])
             level = int(data[2])

@@ -33,14 +33,16 @@ def parseXMLSkills(inFile):
 
     root = etree.getroot()
     chars = root.find('characters')
+    if chars == None:
+        # Yield 1 in case of no <characters> tag
+        yield 1
     char = chars.findall('character')
     if char[0].find('skills') != None:
         char = char[0]
-    elif char[1].find('skills') != None:
-        char = char[1]
     else:
-        char = char[2]
-
+        # Yield 1 in case of error.
+        yield 1
+    
     skills = char.find('skills')
     for skillGroup in skills.findall('skillGroup'):
         for skill in skillGroup.findall('skill'):

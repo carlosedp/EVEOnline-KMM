@@ -22,10 +22,13 @@
 #############################################################################
 
 import sys
+import os
 import re
 import locale
 from time import time
 
+from releaseinfo import LIBSDIR
+    
 def dot_me(amount):
     """
     formats the number to use thousands . separator
@@ -69,14 +72,14 @@ def int_undot_me(amount):
     return int(new)
 
 def executable_path():
-   """
-   return the path of the executable
-   """
-   if sys.path[0].endswith( '\library.zip' ):
-      str = sys.path[0]
-      return str[0:len(str) - 12]
-   else:
-      return sys.path[0]
+    """
+    return the path of the executable
+    """
+    if os.path.split(os.path.dirname(sys.argv[0]))[1].endswith(LIBSDIR):
+        path = os.path.split(os.path.dirname(sys.argv[0]))[0]
+    else:
+        path = os.path.dirname(sys.argv[0])
+    return path
 
 def calculateMinerals(base, waste, ME, PE, batches):
     """
