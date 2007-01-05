@@ -23,6 +23,8 @@
 import sys
 import xml.etree.ElementTree as ET
 import urllib
+import socket
+
 import re
 from PyQt4 import QtCore, QtGui
 
@@ -48,6 +50,23 @@ def parseXMLSkills(inFile):
         for skill in skillGroup.findall('skill'):
             yield(skill.get('typeName') + '|' + skill.get('typeID') + '|' + skill.find('level').text)
 
+def openConnection(url):
+    socket.setdefaulttimeout(5) # timeout in seconds
+    settings = QtCore.QSettings("Kavanagh Productions", "KMM")
+    proxy = str(settings.value("proxy", QtCore.QVariant('')).toString())
+    proxies = {'http': proxy}
+    
+    try:
+        if proxy == '' or proxy == 'http://':
+            urlopener = urllib.FancyURLopener()
+        else:
+            urlopener = urllib.FancyURLopener(proxies)
+        xml = urlopener.open(url)
+    except IOError, message:
+        return 1
+    return xml
+    
+
 def parseMinsStandardXML(index):
     """
     Grabs the mineral prices from standard EVE-Mon XML
@@ -57,13 +76,10 @@ def parseMinsStandardXML(index):
     indexes = {'phoenix': 'http://www.phoenix-industries.org/evemonprices.xml',
                'battleclinic': 'http://eve.battleclinic.com/eve_online/market.php?feed=xml',
                'EVE-Central': 'http://eve-central.com/home/marketstat_xml.html?evemon=1'}
-    
-    settings = QtCore.QSettings("Kavanagh Productions", "KMM")
-    proxy = str(settings.value("proxy", QtCore.QVariant('')).toString())
-    proxies = {'http': proxy}
-    urlopener = urllib.FancyURLopener(proxies)
-    xml = urlopener.open(indexes[index])
-    #print xml.read()
+
+    xml = openConnection(indexes[index])
+    if xml == 1:
+        yield 1     # In case of error
     etree = ET.parse(xml)
     root = etree.getroot()
     mins = root.findall('mineral')
@@ -75,12 +91,10 @@ def parseMinQuant():
     Grabs the mineral prices from Quant Corporation
     http://www.starvingpoet.net/
     """
-    settings = QtCore.QSettings("Kavanagh Productions", "KMM")
-    proxy = str(settings.value("proxy", QtCore.QVariant('')).toString())
-    proxies = {'http': proxy}
-    urlopener = urllib.FancyURLopener(proxies)
-    xml = urlopener.open('http://www.starvingpoet.net/includes/minerals.php').read()
-
+    urlopener = openConnection('http://www.starvingpoet.net/includes/minerals.php')
+    if urlopener == 1:
+        yield 1     # In case of error
+    xml = urlopener.read()
     regexp = re.compile(r'<TD WIDTH="\d*px">(\w*)</TD><TD WIDTH=.*?>([0-9\.\,]*)</TD><TD.*?>[0-9\.\,]*</TD>')
     m = regexp.findall(xml)
     for i in xrange(8):

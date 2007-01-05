@@ -156,6 +156,13 @@ class minStockWindow(internalWindows,Ui_MineralStock):
     def updateStandardXMLSource(self, source):
         QtGui.QApplication.setOverrideCursor(QtGui.QCursor(QtCore.Qt.WaitCursor))
         for line in source:
+            if line == 1:
+                # If returns 1 an error occured in download
+                QtGui.QApplication.restoreOverrideCursor()
+                QtGui.QMessageBox.critical( self, self.tr('Error'), 
+                                            self.tr('The mineral prices could not be downloaded from internet.'),
+                                            QtGui.QMessageBox.Ok,QtGui.QMessageBox.NoButton,QtGui.QMessageBox.NoButton)
+                return
             data = line.split("|")
             min = str(data[0])
             price = str(data[1])
