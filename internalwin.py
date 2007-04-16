@@ -160,7 +160,7 @@ class minStockWindow(internalWindows,Ui_MineralStock):
                 # If returns 1 an error occured in download
                 QtGui.QApplication.restoreOverrideCursor()
                 QtGui.QMessageBox.critical( self, self.tr('Error'), 
-                                            self.tr('The mineral prices could not be downloaded from internet.'),
+                                            self.tr('The mineral prices could not be downloaded from internet.\nCheck your connection or proxy.'),
                                             QtGui.QMessageBox.Ok,QtGui.QMessageBox.NoButton,QtGui.QMessageBox.NoButton)
                 return
             data = line.split("|")

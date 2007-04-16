@@ -31,6 +31,8 @@ from PyQt4 import QtCore, QtGui
 
 from utilities import *
 
+socket.setdefaulttimeout(5) # timeout in seconds
+
 def parseXMLSkills(inFile):
     etree = ET.parse(inFile)
 
@@ -52,18 +54,16 @@ def parseXMLSkills(inFile):
             yield(skill.get('typeName') + '|' + skill.get('typeID') + '|' + skill.find('level').text)
 
 def openConnection(url):
-    socket.setdefaulttimeout(5) # timeout in seconds
     settings = QtCore.QSettings("Kavanagh Productions", "KMM")
     proxy = str(settings.value("proxy", QtCore.QVariant('')).toString())
     proxies = {'http': proxy}
-    
     try:
         if proxy == '' or proxy == 'http://':
-            urlopener = urllib.FancyURLopener()
+            urlopener = urllib.URLopener()
         else:
-            urlopener = urllib.FancyURLopener(proxies)
+            urlopener = urllib.URLopener(proxies)
         xml = urlopener.open(url)
-    except IOError, message:
+    except Exception, message:
         return 1
     return xml
     
