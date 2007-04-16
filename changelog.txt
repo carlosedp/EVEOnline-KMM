@@ -1,5 +1,11 @@
 Changelog for KMM - Kavanagh Manufacture Manager
 
+Changes in 1.0.1 Build 150 (14-04-2006) - Bugfix Release 1.0.1
+      Bugs
+        - XML Import now handles errors in XML files
+        - Improvements on table row selection for multiple windows.
+        - Issue #24 - Fixed errors when no connection could be done or invalid/unavailable proxy server configured to download mineral indexes.
+
 
 Changes in 1.0 Build 134 (07-12-2006) - Final 1.0
       Features:
