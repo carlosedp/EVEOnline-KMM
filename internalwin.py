@@ -694,17 +694,6 @@ class productionWindow(internalWindows,Ui_Production):
                               self.isoEach, self.nocEach, self.zydEach,
                               self.megEach, self.morEach) 
         matTypeID = (34, 35, 36, 37, 38, 39, 40, 11399)
-           
-        itemData = self.EVEdatabase.queryData('''
-            SELECT mat.typeID, comp_mat.quantity, mat.groupID
-            FROM invBlueprintTypes bp, invtypes mat, TL2MaterialsForTypeWithActivity comp_mat,
-                 invTypes bpitem
-            WHERE bp.productTypeID = ?
-            AND bp.blueprinttypeID = bpitem.typeID
-            AND bpitem.typeID = comp_mat.typeID
-            AND mat.typeID = comp_mat.requiredTypeID
-            AND comp_mat.activity = 1
-            ORDER BY mat.typeID;''', (str(typeID),))
 
         itemMat = Item.getMaterials()[0]
         materials = [itemMat[mt]['quantity'] for mt in itemMat]
