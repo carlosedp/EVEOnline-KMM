@@ -34,7 +34,7 @@ def dot_me(amount):
     formats the number to use thousands . separator
     """
     if amount == "": amount = 0
-    locale.setlocale(locale.LC_NUMERIC, 'us')
+    locale.setlocale(locale.LC_NUMERIC, 'en_US')
     return locale.format("%.0f", amount, 1)
 
 def money_me(amount):
@@ -42,7 +42,7 @@ def money_me(amount):
     formats the number to look like money: 1,123.00
     """
     if amount == "": amount = 0
-    locale.setlocale(locale.LC_NUMERIC, 'us')
+    locale.setlocale(locale.LC_NUMERIC, 'en_US')
     return locale.format("%.2f", amount, 1)
 
 def unmoney_me(amount):
