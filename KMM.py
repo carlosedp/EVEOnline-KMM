@@ -237,6 +237,16 @@ class mainWindow(QtGui.QMainWindow, Ui_MainWindow):
 if __name__ == "__main__":
 
     app = QtGui.QApplication(sys.argv)
+    defaultFont = QtGui.QFont()
+    defaultFont.setFamily("Lucida Sans Unicode")
+    defaultFont.setPointSize(8)
+    #defaultFont.setWeight(50)
+    defaultFont.setItalic(False)
+    defaultFont.setUnderline(False)
+    defaultFont.setStrikeOut(False)
+    defaultFont.setBold(False)
+    app.setFont(defaultFont)
+
     mainwindow = mainWindow()
 
     mainwindow.show()
