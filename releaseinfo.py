@@ -51,7 +51,7 @@ ICON = "icon.ico"
 DESTINATIONFILE = "KMM"
 
 # External files to add to the project
-EXTERNALFILES = ["KMM-DB.db","EVE-DB.db","MSVCP71.dll"]
+EXTERNALFILES = ["KMM-DB.db","EVE-DB.db","MSVCP90.dll"]
 
 # User files, not overwrite between installs
 USERFILES = ["KMM-DB.db"]

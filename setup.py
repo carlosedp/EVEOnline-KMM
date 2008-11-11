@@ -215,9 +215,9 @@ app = Target(
     script = releaseinfo.MAINAPP,                   # Script name
     icon_resources = [(1, releaseinfo.ICON)],       # Script Icon
     dest_base = releaseinfo.DESTINATIONFILE,        # Destination directory/filename
-    other_resources = [(RT_MANIFEST, 1, 
-                        manifest_template % dict(prog=releaseinfo.MAINAPP.split(".")[0]))])
-
+    #other_resources = [(RT_MANIFEST, 1, 
+    #                    manifest_template % dict(prog=releaseinfo.MAINAPP.split(".")[0]))])
+    )
 if releaseinfo.EXTERNALFILES:
     external_files = [("",releaseinfo.EXTERNALFILES)]# [("dest. directory",["file1.txt","file2.txt"])]
 else:
