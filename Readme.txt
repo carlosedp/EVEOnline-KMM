@@ -25,6 +25,7 @@
 Version 0.2 - $Rev$
 $Date$
 
+KMM is an application to manage and plan the items manufacture in EVE-Online MMO game.
 
 Running KMM:
 ------------
@@ -51,8 +52,8 @@ Documentation and latest versions
 
 Home page:
 
-  *  http://code.google.com/p/kmm/
+  *  https://github.com/carlosedp/EVEOnline-KMM
 
 Documentation:
 
-  * There´s no documentation for the application yet, all help will be in program.
+  * ThereÂ´s no documentation for the application yet, all help will be in program.
